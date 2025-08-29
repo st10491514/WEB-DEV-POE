@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoBloom Florals | Sustainable Floral Arrangements</title>
+  <style>
+    /* General Page Styles */
+    body {
+      font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      background: #f8f4e3; /* light beige background */
+      color: #2d4d3d;     /* dark green text */
+      line-height: 1.6;
+    }
+
+    /* Navigation (Header) */
+    nav {
+      background: #4a7c59;   /* primary green */
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffd6c8; /* peach highlight */
+    }
+    nav a[aria-current="page"] {
+      font-weight: 700;
+      text-decoration: underline;
+      color: #ffd6c8; /* peach highlight */
+    }
+
+    /* Main Content */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #4a7c59; /* primary green */
+      font-family: "Playfair Display", serif;
+    }
+    
+    /* Products Grid */
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-top: 2rem;
+    }
+    .product {
+      text-align: center;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 6px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .price {
+      font-weight: bold;
+      margin-top: 0.5rem;
+      color: #4a7c59; /* primary green */
+    }
+
+    /* Forms */
+    form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    label {
+      font-weight: 500;
+    }
+    input, textarea, select {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: "Inter", sans-serif;
+    }
+    textarea {
+      min-height: 120px;
+    }
+    input[type="submit"] {
+      width: fit-content;
+      cursor: pointer;
+      background: #4a7c59; /* primary green button */
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    input[type="submit"]:hover {
+      background: #2d4d3d; /* darker green on hover */
+    }
+
+    /* Footer */
+    footer {
+      background: #4a7c59;  /* primary green */
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    
+    /* Team List */
+    .team-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .team-list li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      text-indent: -1.5rem;
+    }
+    .team-list strong {
+      color: #4a7c59;
+    }
+    
+    /* Contact Info */
+    .contact-info {
+      list-style-type: none;
+      padding: 0;
+    }
+    .contact-info li {
+      margin-bottom: 0.8rem;
+    }
+    .contact-info a {
+      color: #4a7c59;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Map */
+    .map-container {
+      margin-top: 2rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" aria-current="page">About Us</a>
+    <a href="products.html">Shop</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="testimonials.html">Testimonials</a>
+  </nav>
+
+  <main>
+    <h1>About EcoBloom Florals</h1>
+    <p>
+      Founded in 2005 in Johannesburg, EcoBloom Florals is a sustainable floral studio passionate about
+      creating beautiful arrangements while supporting local eco-friendly farms. Our mission is simple: 
+      to deliver memorable floral experiences while promoting sustainable practices in the floral industry.
+    </p>
+
+    <h2>Our Sustainability Commitment</h2>
+    <p>
+      We source all our flowers from local eco-friendly farms that practice organic farming methods,
+      reducing our carbon footprint and supporting the local economy. Our packaging is 100% biodegradable
+      or recyclable, and we use natural pest control methods in our studio garden.
+    </p>
+
+    <h2>Meet the Team</h2>
+    <ul class="team-list">
+      <li><strong>Founder & Lead Florist:</strong> Sarah</li>
+      <li><strong>Operations Manager:</strong> Thabo</li>
+      <li><strong>Senior Floral Designer:</strong> Naledi</li>
+      <li><strong>Sustainability Coordinator:</strong> James</li>
+      <li><strong>Customer Relations:</strong> Precious</li>
+    </ul>
+  </main>
+
+  <footer>
+    © <span id="year"></span> EcoBloom Florals • Johannesburg, South Africa
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
